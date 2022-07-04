@@ -9,6 +9,7 @@ git config --global user.email "Your Email"
 本地仓库中
    第一步 git add 文件名  (添加到暂存区)
    第二部 git commit -m“提交信息”(将暂存区内容推送至分支)
+              git add . 添加所有有改动的文件
 
 4.查看仓库状态
 git status
