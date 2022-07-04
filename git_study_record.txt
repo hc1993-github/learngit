@@ -43,6 +43,7 @@ git reset HEAD 文件名 将暂存区的修改撤销，重新放回工作区
 
 10.克隆
  选择合适的目录 git clone SSH连接
+                        git pull 拉取所有最新内容
 
 11.分支
   1)创建分支git branch 分支名
