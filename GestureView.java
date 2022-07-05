@@ -80,4 +80,8 @@ public class GestureView extends View {
         }
     }
 
+    public void reset(){
+        path.reset();
+        postInvalidate();
+    }
 }
