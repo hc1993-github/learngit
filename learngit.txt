@@ -1,1 +1,11 @@
-hello git world good new hello
+android.applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd")
+                Date date = new Date()
+                def fileName = "ColdchainPrint-${defaultConfig.versionCode}-${simpleDateFormat.format(date)}.apk"
+                output.outputFileName = fileName
+            }
+        }
+    }
